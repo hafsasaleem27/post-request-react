@@ -15,7 +15,7 @@ function AddMovie(props) {
     setIsLoading(true);
     try {
       const response = await fetch(
-        "https://react-http-fe5e1-default-rtdb.firebase.com/movies.json",
+        "https://react-http-fe5e1-default-rtdb.firebaseio.com/movies.json",
         {
           method: "POST",
           body: JSON.stringify(movie),
