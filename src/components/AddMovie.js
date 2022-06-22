@@ -19,6 +19,9 @@ function AddMovie(props) {
         {
           method: "POST",
           body: JSON.stringify(movie),
+          headers: {
+            'Content-Type': 'application/json'
+          }
         }
       );
       // not working when error is thrown by fetch above :/
